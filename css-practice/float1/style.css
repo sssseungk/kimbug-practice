@@ -4,9 +4,10 @@
 }
 
 body {
+  height: 100vh;
+  background-color: black;
   font-family: "Roboto", sans-serif;
   letter-spacing: -0.02em;
-  background-color: white;
 }
 
 a {
@@ -16,38 +17,43 @@ a {
   text-decoration: none;
 }
 
-.tab-menu{
+/* ▼ WHERE YOUR CODE BEGINS */
+
+ul{
   list-style-type: none;
   padding-left: 0;
+  /* overflow: hidden; */
+  background-color: white;
+}
+
+.tab-menu{
+  max-width: 540px;
   border-bottom: 1px solid #E5EAEF;
 }
 
 .tab-menu::after{
   content: '';
   display: block;
-  clear: both;
+  clear: left;
 }
 
-.tab-menu-item{
+.tab-menu-item {
   float: left;
   margin-right: 16px;
 }
 
-.tab-menu-item.active{
+.tab-menu-item a {
+  /* padding은 a 태그에 주는 것을 추천함 => 타겟 영역을 넓히기 위함 */
+  /* a 태그는 inline 요소이기 때문에 display 속성을 block으로 지정해줘야 padding top을 줄 수 있음 */
+  display: block;
+  padding: 16px 20px;
+}
+
+.tab-menu-item.selected{
   border-bottom: 2px solid #2860E1;
 }
 
-.tab-menu-item.active a{
+.tab-menu-item.selected a{
   color: #2860E1;
   font-weight: 500;
 }
-
-.tab-menu-item:last-child{
-  margin-right: 0;
-}
-
-.tab-menu-item a{
-  padding: 16px 20px;
-  display: block;
-}
-
