@@ -5,6 +5,7 @@
 
 body {
   font-family: "Lato", sans-serif;
+  background-color: black;
 }
 
 h1 {
@@ -15,3 +16,42 @@ h1 {
 }
 
 /* ▼ WHERE YOUR CODE BEGINS */
+
+.user-card{
+  margin: 20px;
+  overflow: hidden;
+  padding: 8px 121px 8px 12px;
+  background-color: white;
+  max-width: 240px;
+  border-radius: 4px;
+}
+
+.user-photo{
+  position: relative;
+  width: 40px;
+  height: 40px;
+  float: left;
+  margin-right: 12px;
+}
+.user-photo img{
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  float: left;
+}
+
+.user-status{
+  width: 8px;
+  height: 8px;
+  border: 1px solid #21D891;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #21D891;
+  right: 0;
+  bottom: 0;
+}
+
+.user-name{
+  padding: 8px 0;
+  float: left;
+}
