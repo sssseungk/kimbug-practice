@@ -6,7 +6,7 @@
 body {
   font-family: "Noto Sans KR", sans-serif;
   letter-spacing: -0.02em;
-  background-color: black;
+  background-color: whitesmoke;
 }
 
 h1 {
@@ -57,18 +57,31 @@ button {
 
 /* ▼ WHERE YOUR CODE BEGINS */
 .card{
+  width: 400px;
   background-color: white;
-  max-width: 407px;
+  margin: 20px;
 }
 
 .card-carousel{
-  background-color: black;
   position: relative;
+  background-color: black;
 }
 
-#prev, #next{
+.card-carousel img{
+  /* 부모(card 클래스) 컨텐츠 길이만큼 width를 갖게 하기 */
+  /* 이미지 사이즈 조정할 때 많이 쓰는 코드 */
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#prev,
+#next{
   position: absolute;
-  bottom: 106px;
+  /* 캐러셀이 중앙 지점에서 시작하기 때문에 위쪽으로 조정시켜줘야함 */
+  top: 50%;
+  /* translate는 자기 자신을 기준으로 함. => height 값의 반만큼 y축(위)으로 올리기*/
+  transform: translateY(-50%);
 }
 
 #prev{
@@ -79,31 +92,17 @@ button {
   right: 0;
 }
 
-.card-carousel img{
-  display: block;
-  width: 407px;
-}
-
-.card-content{
-  overflow: hidden;
+.card-content {
   padding: 12px 16px;
 }
 
 .card-content h1{
-  font-size: 22px;
-  font-weight: 500;
-}
-
-.card-content span{
-  display: block;
-  margin-bottom: 8px;
+  margin-bottom: 2px;
 }
 
 .card-content strong{
-  float: right;
-}
-
-.card-content strong span{
-  float: left;
-  margin-right: 4px;
+  display: block;
+  margin-top: 8px;
+  /* 글씨 우측으로 이동시키기 */
+  text-align: right;
 }
