@@ -8,7 +8,7 @@ body {
   height: 100vh;
   font-family: "Nunito Sans", sans-serif;
   color: #273444;
-  background-color: #000;
+  background-color: whitesmoke;
 }
 
 input:focus,
@@ -17,11 +17,6 @@ button:focus,
 button:active {
   box-shadow: none;
   outline: none;
-}
-
-.modal {
-  background-color: #fff;
-  margin: 20px;
 }
 
 .modal-title {
@@ -54,13 +49,20 @@ button:active {
 }
 
 /* ▼ WHERE YOUR CODE BEGINS */
-.modal{
-  width: 680px;
+.modal {
+  /* 화면 정중앙에 배치시키기 (뷰포트 기준) */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   padding: 32px 40px;
-  background-color: white;
-  text-align: center;
+  background-color: #fff;
   border-radius: 4px;
-  position: relative;
+}
+
+.modal-title,
+.modal-desc{
+  text-align: center;
 }
 
 .modal-title{
@@ -68,28 +70,36 @@ button:active {
 }
 
 .modal-desc{
-  margin-bottom: 24px;
-  font-size: 16px;
+  width: 592px;
+  margin: 0 auto 24px;
+}
+
+.input-group{
+  /* block 안의 inline 요소들은 text-align으로 정렬이 가능하다. */
+  text-align: center;
 }
 
 .input-group input{
   width: 200px;
-  padding: 8px 0 8px 16px;
-  background-color: #F6F8FA;
-  border: none;
+  height: 36px;
+  padding: 0 16px;
   border-radius: 4px;
+  border: none;
+  background-color: #f6f8fa;
   margin-right: 8px;
 }
 
 .input-group button{
-  padding: 8px 13px 8px 14px;
-  background-color: #2860E1;
-  color: white;
+  height: 36px;
+  padding: 0 14px;
   border: none;
   border-radius: 4px;
+  background-color: #2860e1;
+  color: #fff;
 }
 
 .close-button{
+  /* 기준점은 position: fixed인 modal */
   position: absolute;
   top: 8px;
   right: 8px;
