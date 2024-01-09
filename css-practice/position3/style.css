@@ -21,6 +21,7 @@ button:active {
 
 .modal {
   background-color: #fff;
+  margin: 20px;
 }
 
 .modal-title {
@@ -53,3 +54,43 @@ button:active {
 }
 
 /* ▼ WHERE YOUR CODE BEGINS */
+.modal{
+  width: 680px;
+  padding: 32px 40px;
+  background-color: white;
+  text-align: center;
+  border-radius: 4px;
+  position: relative;
+}
+
+.modal-title{
+  margin-bottom: 4px;
+}
+
+.modal-desc{
+  margin-bottom: 24px;
+  font-size: 16px;
+}
+
+.input-group input{
+  width: 200px;
+  padding: 8px 0 8px 16px;
+  background-color: #F6F8FA;
+  border: none;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.input-group button{
+  padding: 8px 13px 8px 14px;
+  background-color: #2860E1;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.close-button{
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
