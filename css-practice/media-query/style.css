@@ -89,7 +89,7 @@ a {
 @media screen and (min-width: 768px){
   .banner{
     top: 0;
-    bottom: auto;
+    bottom: auto;   /* 이전에 선언했던 bottom 값 해제 */
   }
 
   .banner-title a{
@@ -101,10 +101,9 @@ a {
   }
 
   .landing-title{
-    text-align: center;
-    font-size: 50px;
-    font-weight: 900;
     margin-bottom: 32px;
+    font-size: 50px;
+    text-align: center;
   }
 
   .landing-link{
