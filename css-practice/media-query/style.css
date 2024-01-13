@@ -86,3 +86,30 @@ a {
   border-radius: 16px;
 }
 
+@media screen and (min-width: 768px){
+  .banner{
+    top: 0;
+    bottom: auto;
+  }
+
+  .banner-title a{
+    height: 80px;
+  }
+
+  .landing{
+    align-items: center;
+  }
+
+  .landing-title{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 32px;
+  }
+
+  .landing-link{
+    width: 180px;
+    height: 56px;
+    font-size: 18px;
+  }
+}
