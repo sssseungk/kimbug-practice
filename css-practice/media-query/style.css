@@ -41,3 +41,45 @@ a {
 }
 
 /* ▼ WHERE YOUR CODE BEGINS */
+
+.banner{
+  width: 100%;
+  background-color: #FFC82C;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+}
+
+.banner-title{
+  font-size: 18px;  
+}
+
+.banner-title a {
+  display: block;
+  padding: 20px 0;
+}
+
+.landing{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.landing-title{
+  font-size: 32px;
+  text-align: right;
+  margin-right: 20px;
+  margin-bottom: 24px;
+}
+
+.landing-link{
+  font-size: 15px;
+  padding: 14px 37px;
+  border: 2px solid white;
+  border-radius: 16px;
+  margin-right: 20px;
+}
+
