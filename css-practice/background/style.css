@@ -1,5 +1,111 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
 .like-button {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* ▼ WHERE YOUR CODE BEGINS */
+.card{
+  display: flex;
+  padding: 24px;
+  background-color: aliceblue;
+  width: 840px;
+}
+
+.card-image{
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background-image: url('./assets/img-house.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 6px;
+  margin-right: 24px;
+}
+
+.like-button{
+  background-color: white;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  background-image: url('./assets/icon-favorite.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+
+.card-header{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.plus-badge{
+  background-color: #92174D;
+  border-radius: 4px;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 1px 8px;
+  margin-right: 8px;
+}
+
+.property-type span{
+  font-size: 16px;
+  color: #7D858F;
+}
+
+.property-rate::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url('./assets/icon-star.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.property-rate strong{
+  color: #151B26;
+}
+
+.property-rate span{
+  color: #7D858F;
+}
+
+.card-title{
+  font-size: 20px;
+  line-height: 1.6;
+  color: #151B26;
+  margin-bottom: 16px;
+}
+
+.sr-only{
+  display: none;
+}
+
+dd span{
+  color: #7D858F;
+  font-size: 14px; 
+}
+
+dd span:not(:last-child)::after {
+  content: '•';
+  margin-left: 5px;
+}
+
+
+.property-detail div{
+  margin-bottom: 8px;
+}
