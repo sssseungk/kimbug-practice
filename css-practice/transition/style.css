@@ -1,0 +1,50 @@
+/* ▼ WHERE YOUR CODE BEGINS */
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  margin: 50px;
+}
+
+/* form 관련 요소들은 body에 font-family 적용해도 안먹음 */
+button,
+input,
+textarea{
+  font-family: 'Lato', sans-serif;
+}
+
+button{
+  background-color: whitesmoke;
+  border: none;
+}
+
+.line-button{
+  position: relative;
+  padding: 18px 100px;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #151B26;
+  cursor: pointer;
+}
+
+/* 버튼 아래에 막대 생성하기 */
+.line-button::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #0066FF;
+  transition: width 250ms ease-in, background-color 250ms ease-in;
+}
+
+/* line-button에 마우스를 올렸을 때 가상요소는 */
+.line-button:hover::after{
+  width: 100%;
+  background-color: hotpink;
+}
