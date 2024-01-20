@@ -1,0 +1,19 @@
+/*
+* Grid System 
+- container : 그리드 시스템이 적용되는 전체 범위
+- column : 컨테이너를 나눈 한 열 (12칸을 많이 씀)
+- gutter : 간격을 위한 여백
+
+* Bootstrap
+- Grid System을 반응형으로 쉽게 구현할 수 있게 하는 CSS 프레임워크
+*/
+
+p{
+  padding: 8px 0;
+  border-radius: 4px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #0066ff;
+  text-align: center;
+  font-size: 8px;
+}
