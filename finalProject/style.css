@@ -107,6 +107,24 @@ p{
   margin-right: 8px;
 }
 
+/* * Service Section */
+.service{
+  background-color: #F4F5F7;
+  padding: 80px 0;
+}
+
+.service-title{
+  font-size: 22px;
+  line-height: 1.363636363636364;
+  letter-spacing: -0.04em;
+  font-weight: 700;
+  color: #2B292D;
+  margin-bottom: 16px;
+}
+
+.service .col-12:first-child{
+  margin-bottom: 40px;
+}
 
 /* >= 768px (Desktop)*/
 @media screen and (min-width: 768px){
@@ -142,6 +160,22 @@ p{
   .landing .button-group .fill-button:first-child{
     margin-right: 16px;
   }
+
+  /* * Service Section */
+  .service{
+    background-color: #F4F5F7;
+    padding: 80px 0;
+  }
+  
+  .service-title{
+    font-size: 26px;
+    line-height: 1.307692307692308;
+  }
+  
+  .service .col-12:first-child{
+    margin-bottom: 0;
+  }
+
 }
 
 /* Custom Grid System - Fix container width */
