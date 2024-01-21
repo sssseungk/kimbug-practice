@@ -63,3 +63,59 @@ p{
 
 
 /* 폰트, reset CSS, max-width 설정 */
+
+.landing-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #FDDED8;
+  height: 100vh;
+}
+
+.landing-title{
+  text-align: center;
+  font-size: 40px;
+  line-height: 1;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.landing-introduce{
+  line-height: 1.375;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.landing-buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.apply-button{
+  width: 140px;
+  height: 48px;
+  background-color: #3040C4;
+  color: #fff;
+  padding: 12px 34px;
+  border-radius: 2px;
+  border: none;
+  font-size: 13px;
+  line-height: 1.6;
+  font-weight: 700;
+  margin-right: 8px;
+}
+
+.more-button{
+  width: 140px;
+  height: 48px;
+  background-color: #fff;
+  color: #3040C4;
+  padding: 12px 32px;
+  border-radius: 2px;
+  border: none;
+  font-size: 13px;
+  line-height: 1.6;
+  font-weight: 700;
+}
