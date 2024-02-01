@@ -70,6 +70,26 @@ p{
   opacity: 0.5;
 }
 
+.section-category{
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+}
+
+.section{
+  padding: 80px 0;
+}
+
+.section-title{
+  margin-bottom: 24px;
+  font-size: 34px;
+  line-height: 1.058823529411765;
+  letter-spacing: -0.03em;
+  columns: #2B292D;
+}
+
 /* * Landing Section */
 .landing{
   text-align: center;
@@ -127,65 +147,14 @@ p{
 }
 
 /* * Program Section  */
-.program{
-  padding: 80px 0;
-}
-
-.programCategory{
+.program .section-category{
   color: #009B4D;
-  font-weight: 700;
-  margin-bottom: 8px;
 }
 
-.programTitle{
-  font-size: 34px;
-  font-weight: 700;
-  letter-spacing: -0.03em;
-  line-height: 1.058823529411765;
-  margin-bottom: 24px;
-}
 
-.programContent{
-  line-height: 1.5;
-  margin-bottom: 32px;
-}
 
-.imageBox{
-  /* background-color: tomato; */
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-}
 
-.image1{
-  width: 142px;
-  height: 195px;
-  margin: 24px 0 16px;
-}
-
-.image2{
-  width: 146px;
-  height: 195px;
-  margin: 24px 0 16px;
-}
-
-.image3{
-  width: 122px;
-  height: 195px;
-  margin: 24px 0 16px;
-}
-
-.imageBox span{
-  font-size: 18px;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  line-height: 1.333333333333333;
-  margin-bottom: 32px;
-  
-}
+/* ! 반응형 (미디어쿼리) */
 
 /* >= 768px (Desktop)*/
 @media screen and (min-width: 768px){
@@ -195,12 +164,35 @@ p{
     line-height: 1.3636363636;
   }
   
+  .fill-button{
+    width: 160px;
+    height: 56px;
+    font-size: 18px;
+    line-height: 1.555555555555556;
+  }
+
+  .section{
+    padding-bottom: 96px;
+  }
+  
+  .section-category{
+    margin-bottom: 16px;
+    font-size: 22px;
+    line-height: 1.090909090909091;
+  }
+
+  .section-title{
+    margin-bottom: 32px;
+    font-size: 56px;
+    line-height: 1;
+  }
+
+  /* * Landing Section */
   .landing-content{
     height: auto;
     padding: 120px 0;
   }
 
-  /* * Landing Section */
   .landing-title{
     font-size: 70px;
     line-height: 1.028571428571429;
@@ -209,13 +201,6 @@ p{
 
   .landing-desc{
     margin-bottom: 32px;
-  }
-
-  .fill-button{
-    width: 160px;
-    height: 56px;
-    font-size: 18px;
-    line-height: 1.555555555555556;
   }
 
   .landing .button-group .fill-button:first-child{
@@ -239,59 +224,7 @@ p{
 
   /* * Program Section */
   .program{
-    display: flex;
-    flex-direction: col;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-    padding: 80px 0 96px;
-  }
-
-  .programCategory{
-    display: block;
-    font-size: 22px;
-    margin-bottom: 16px;
-  }
-
-  .programTitle{
-    font-size: 56px;
-    line-height: 1em;
-    letter-spacing: -0.03em;
-    margin-bottom: 32px;
-  }
-
-  .programContent{
-    font-size: 22px;
-    line-height: 1.454545454545455;
-    margin-bottom: 72px;
-  }
-
-  .imageContainer{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .imageBox{
-    margin-bottom: 0px;
-  }
-  
-  .image1{
-    margin: 24px 0 24px;
-  }
-  
-  .image2{
-    margin: 24px 0 24px;
-  }
-  
-  .image3{
-    margin: 24px 0 24px;
-  }
-  
-  .imageBox span{
-    font-size: 20px;
-    line-height: 1.2;    
   }
 }
 
