@@ -126,6 +126,67 @@ p{
   margin-bottom: 40px;
 }
 
+/* * Program Section  */
+.program{
+  padding: 80px 0;
+}
+
+.programCategory{
+  color: #009B4D;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.programTitle{
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.058823529411765;
+  margin-bottom: 24px;
+}
+
+.programContent{
+  line-height: 1.5;
+  margin-bottom: 32px;
+}
+
+.imageBox{
+  /* background-color: tomato; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.image1{
+  width: 142px;
+  height: 195px;
+  margin: 24px 0 16px;
+}
+
+.image2{
+  width: 146px;
+  height: 195px;
+  margin: 24px 0 16px;
+}
+
+.image3{
+  width: 122px;
+  height: 195px;
+  margin: 24px 0 16px;
+}
+
+.imageBox span{
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.333333333333333;
+  margin-bottom: 32px;
+  
+}
+
 /* >= 768px (Desktop)*/
 @media screen and (min-width: 768px){
   /* Reset CSS */
@@ -176,6 +237,62 @@ p{
     margin-bottom: 0;
   }
 
+  /* * Program Section */
+  .program{
+    display: flex;
+    flex-direction: col;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 80px 0 96px;
+  }
+
+  .programCategory{
+    display: block;
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+
+  .programTitle{
+    font-size: 56px;
+    line-height: 1em;
+    letter-spacing: -0.03em;
+    margin-bottom: 32px;
+  }
+
+  .programContent{
+    font-size: 22px;
+    line-height: 1.454545454545455;
+    margin-bottom: 72px;
+  }
+
+  .imageContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imageBox{
+    margin-bottom: 0px;
+  }
+  
+  .image1{
+    margin: 24px 0 24px;
+  }
+  
+  .image2{
+    margin: 24px 0 24px;
+  }
+  
+  .image3{
+    margin: 24px 0 24px;
+  }
+  
+  .imageBox span{
+    font-size: 20px;
+    line-height: 1.2;    
+  }
 }
 
 /* Custom Grid System - Fix container width */
