@@ -226,6 +226,10 @@ p{
   margin-bottom: 0;
 }
 
+.curriculum img{
+  display: none;
+}
+
 /* ! 반응형 (미디어쿼리) */
 
 /* >= 768px (Desktop)*/
@@ -310,6 +314,48 @@ p{
   .program-card strong{
     font-size: 20px;
     line-height: 1.2;
+  }
+
+  /* * Curriculum Section */
+  .curriculum img{
+    display: block;
+    width: 450px;
+    height: 450px;
+  }
+
+  .curriculum .section-desc{
+    margin-bottom: 0;
+  }
+
+  .curriculum .section-desc{
+    margin-bottom: 72px;
+  }
+
+  .curriculum .fill-button{
+    margin-bottom: 66px;
+  }
+
+  .curriculum .container .row:first-child div{
+    margin-bottom: 24px;
+  }
+
+  .curriculum .container .row:last-child div{
+    display: flex;
+  }
+
+  .curriculum .container .row:last-child div p{
+    width: 450px;
+    height: 78px;
+    margin-bottom: 0;
+  }
+
+  .curriculum-desc{
+    font-size: 18px;
+    line-height: 1.444444444444444;
+  }
+  
+  .row .col-12 .curriculum-desc{
+    margin-bottom: 0;
   }
 }
 
