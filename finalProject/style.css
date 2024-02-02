@@ -200,7 +200,31 @@ p{
   transition: color 500ms ease-in-out;
 }
 
+/* * Curriculum Section  */
+.curriculum .section-category{
+  color: #0189D1;
+}
 
+.curriculum .section-desc{
+  margin-bottom: 32px;
+}
+
+.curriculum .fill-button{
+  margin-bottom: 48px;
+}
+
+.curriculum-desc{
+  font-size: 15px;
+  line-height: 1.466666666666667;
+}
+
+.row .col-12 .curriculum-desc:first-child{
+  margin-bottom: 40px;
+}
+
+.row .col-12 .curriculum-desc:last-child{
+  margin-bottom: 0;
+}
 
 /* ! 반응형 (미디어쿼리) */
 
