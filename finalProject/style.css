@@ -290,6 +290,28 @@ p{
   color: #3040c4;
 }
 
+/* * Footer */
+.footer{
+  padding: 24px 0;
+}
+
+.footer-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 1.714285714285714;
+  letter-spacing: -0.01em;
+  color: #807F81;
+}
+
+.footer-box a{
+  margin-bottom: 8px;
+}
+
+.footer-box a:last-child{
+  margin-bottom: 0;
+}
 
 /* ! 반응형 (미디어쿼리) */
 
@@ -442,6 +464,24 @@ p{
   .subscription-form .form-notice{
     font-size: 14px;
     line-height: 1.714285714285714;
+  }
+
+  /* * Footer */
+  .footer{
+    padding: 16px 0;
+  }
+  
+  .footer-box{
+    flex-direction: row;
+  }
+  
+  .footer-box a{
+    margin-bottom: 0;
+    margin-right: 16px;
+  }
+  
+  .footer-box a:last-child{
+    margin-right: 0;
   }
 }
 
