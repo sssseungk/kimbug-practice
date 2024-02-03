@@ -59,6 +59,7 @@ p{
   letter-spacing: -0.05em;
   border-radius: 2px;
   transition: opacity 300ms ease-in-out;
+  border: none;
 }
 
 .fill-button.inverted{
@@ -230,82 +231,65 @@ p{
 
 /* * Subscription section */
 .subscription{
-  padding: 40px 0;
-  background-color: #F2F8FA;
-}
-
-.subscription .col-12{
   text-align: center;
+  background-color: #F2F8FA;
+  padding: 40px 0;
 }
 
-.subscription .col-12 > div{
+.subscription-image{
+  padding: 25px 0;
+}
+
+.subscription-image img{
+  display: block;
+  width: auto;
+  height: 190px;
+  margin: 0 auto;
+}
+
+.subscription-title{
   margin-bottom: 16px;
-}
-
-.subscription img{
-  width: 100%;
-  max-width: 191px;
-  height: auto;
-  margin: 25px 0;
-}
-
-.subscription .subscription-title{
-  font-size: 32px;
   font-weight: 700;
+  color: #2b292d;
+  font-size: 32px;
   line-height: 1;
   letter-spacing: -0.05em;
-  margin-bottom: 16px;
 }
 
-.subscription .subscription-desc{
-  line-height: 1.5;
+.subscription-desc{
   margin-bottom: 24px;
 }
 
-.subscription-form form{
-  display: flex;
-  flex-direction: column;
-}
-
-
-.subscription-form form input{
-  width: 100%;
-  line-height: 1.5;
-  color: #7B7B7E;
-  border: none;
-  padding: 12px 0 12px 16px;
+.subscription .input-group{
   margin-bottom: 8px;
 }
 
-.subscription-form form button{
-  background-color: #3040C4;
+.subscription .input-group input{
+  width: 100%;
+  height: 48px;
+  padding: 0 16px;
   border-radius: 2px;
+  background-color: #fff;
   border: none;
-  color: #ffffff;
-  font-size: 15px;
-  line-height: 1.6;
-  letter-spacing: -0.05em;
-  padding: 12px 106px;
   margin-bottom: 8px;
+}
+
+.subscription .input-group button{
   width: 100%;
 }
 
-.subscription-form form button:hover{
-  opacity: 0.5;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.subscription-form form > span{
-  color: #7B7B7E;
+.subscription-form .form-notice{
   font-size: 13px;
   line-height: 1.538461538461538;
   letter-spacing: 0;
+  color: #7b7b7e;
 }
 
-.subscription-highlight{
-  color: #3040C4;
+.subscription-form .form-notice a{
   text-decoration: underline;
+  color: #3040c4;
 }
+
 
 /* ! 반응형 (미디어쿼리) */
 
@@ -419,63 +403,43 @@ p{
 
   /* * Subscription Section */
   .subscription{
-    padding: 88px 0;
+    padding: 80px 0;
+    text-align: left;
   }
-  
-  .subscription .col-12{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: start;
+
+  .subscription-image{
+    padding: 8px 0;
   }
-  
-  .subscription .col-12 > div{
-    margin-bottom: 0;
-    margin-right: 30px;
+
+  .subscription-image img{
+    height: 285px;
+    margin-left: 0;
   }
-  
-  .subscription img{
-    width: 100%;
-    max-width: 287px;
-    height: auto;
-    margin: 8px 83px 7px 0;
-  }
-  
-  .subscription .subscription-title{
+
+  .subscription-title{
     font-size: 40px;
   }
-  
-  .subscription .subscription-desc{
-    line-height: 1.454545454545455;
-  }
-  
-  .subscription-form form{
+
+  .subscription-form .input-group{
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4px;
   }
 
-  .subscription-form form div{
-    display: flex;
-  }
-  
-  .subscription-form form input{
+  .subscription .input-group input{
+    height: 56px;
+    margin-bottom: 0;
     font-size: 18px;
     line-height: 1.333333333333333;
-    padding: 16px 0 16px 16px;
     margin-right: 8px;
   }
-  
-  .subscription-form form button{
-    font-size: 18px;
-    line-height: 1.333333333333333;
-    letter-spacing: -0.02em;
-    padding: 15px 27px;
-    margin-bottom: 8px;
-    height: auto;
-    width: 200px;
+
+  .subscription .input-group .fill-button{
+    width: 160px;
+    flex-shrink: 0;
   }
 
-  .subscription-form form > span{
+  .subscription-form .form-notice{
     font-size: 14px;
     line-height: 1.714285714285714;
   }
